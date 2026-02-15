@@ -189,8 +189,8 @@ Stay curious and keep learning! 🚀
 
 ## Credits
 
-- Written by: **[Your Name]**
-- GitHub: [your-github-username](https://github.com/your-github-username)
+- Written by: **BALD**
+- GitHub: [dhiasaid](https://github.com/Dhiasaid)
 - Date: *April 2025*
 
 ---
