@@ -1,0 +1,12 @@
+services:
+  challenge1:
+    build: .
+    ports:
+      - "5010:10001"
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop:
+      - all
+    restart: on-failure
+

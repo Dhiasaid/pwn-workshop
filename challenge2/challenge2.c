@@ -1,3 +1,4 @@
+// gcc challenge1.c -o challenge1 -fno-stack-protector -z execstack -no-pie -fno-pie -Wl,-z,norelro -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=0 -fcf-protection=none
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -20,6 +21,7 @@ void vuln() {
     buffer[sizeof(buffer) - 1] = '\0'; 
 
     printf("Enter your input: ");
+    fflush(stdout);
     fgets(input, sizeof(input), stdin);
 
     printf(input);
